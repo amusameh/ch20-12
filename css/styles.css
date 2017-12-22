@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+/* General styles */
+
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+body {
+	height: 1000px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* top bar styles */
+
+.topBar {
+	background-color: #26272b;
+	padding: 12px 0;
+}
+
+.topBar .socials {
+	float: left;
+	color: #b4b4b4;
+}
+
+.topBar .socials li {
+	float: left;
+}
+
+.topBar .socials li a {
+	color: #b4b4b4;
+	margin-right: 10px;
+}
+
+.topBar .loginForm {
+	float: right;
+}
+
+.topBar .loginForm li {
+	float: left;
+}
+
+.topBar .loginForm li a {
+	color: #b4b4b4;
+	margin-right: 20px;
+}
+
+.topBar .loginForm li:hover a {
+	color: #a3bf00;
+}
+
+.topBar .loginForm li a i {
+	margin-right: 5px;
+}
+
+.topBar .loginForm li+li a {
+	margin-right: 0;
+}
+
+
+/* Header styles */
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/deeropt.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 600px;
+
+}
+
+header .introContent {
+	padding: 30px 0;
+}
+
+header nav .logo h1 a{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+
+header nav .mainNav {
+	padding-top: 4px;
+}
+
+header nav .mainNav li {
+	float: left;
+	padding-left: 20px;
+	position: relative;
+}
+
+header nav .mainNav li a {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+header nav .mainNav li:hover > a,
+header nav .mainNav li.active > a {
+	color: #a3bf00;
+}
+
+header nav .mainNav li.drop:before {
+	content: "▾ ";
+	color: white;
+}
+header nav .mainNav li.drop ul {
+	position: absolute;
+	left: 9000em;
+}
+
+header nav .mainNav li.drop:hover ul {
+	left: 20px;
+}
+
+header nav .mainNav li.drop ul li {
+	width: 100px;
+}
+
+header nav .mainNav li.drop ul li a {
+	padding-top: 10px;
+	display: block;
+}
+
+/* intro styles */
+
+
+header .intro {
+	padding: 220px 0 165px;
+	text-transform: uppercase; 
+}
+
+header .intro h2 {
+	color: white;
+	font-size: 2.5em;
+}
+
+header .intro p {
+	color: white;
+	font-size: .8em;
+	padding-bottom: 30px;
+}
+
+header .intro a {
+	display: inline-block;
+	border: 1px solid #a3bf00;
+	padding: 10px 20px;
+	color: white;
+	margin-right: 30px;
+	text-transform: uppercase;
+}
+
+header .intro a:hover {
+	background-color: #a3bf00;
+	border-color: #a3bf00;
+	transition: all .3s ease-in-out;
+}
